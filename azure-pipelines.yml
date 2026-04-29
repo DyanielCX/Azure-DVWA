@@ -8,6 +8,6 @@ jobs:
   - checkout: self
   - script: |
       docker pull armourzero/pipe-scan:latest || true
-      docker run -v "$(System.DefaultWorkingDirectory):/app/wrk" --rm armourzero/pipe-scan:latest --apikey="$(AZ_TOKEN)" --projectkey="fDZclqrJSDbTOUgsRuIjleejMPQCyQCe" --branch="$(Build.SourceBranchName)" --repo="$BUILD_REPOSITORY_NAME"
+      docker run -v "$(System.DefaultWorkingDirectory):/app/wrk" --rm armourzero/pipe-scan:latest --apikey="$(AZ_TOKEN)" --projectkey="OtEYbwRAkMLGHPlvoPFrzQYpQITSiyRJ" --branch="$(Build.SourceBranchName)" --repo="$BUILD_REPOSITORY_NAME"
     displayName: 'Run Security Test'
   
